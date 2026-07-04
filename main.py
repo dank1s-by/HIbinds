@@ -1,6 +1,7 @@
 import json
 import os
 from creater import create_new_bind
+from runner import use_bind
 DB_file = "HIbinds.json"
 
 if not os.path.exists(DB_file):
@@ -14,11 +15,9 @@ def start_PO():
     while True:
         first_mess = input('Hi, this is HiBinds. Choose what you want to do:\n1. Use a working bind\n2. Create a new bind\n:')
         if first_mess == '1': 
-            pass
-            break
+            use_bind()
         elif first_mess == '2':
             create_new_bind()
-            break
         else:
             print('wrong way!!!')
 start_PO()
