@@ -40,7 +40,7 @@ def create_new_bind():
 
         with open(DB_file, "w", encoding="utf-8") as f:
             json.dump(sych_binds, f, indent=4, ensure_ascii=False)
-        print(f'\nbind {bind_name} load!!! OWO')
+        print(f'\nbind {bind_name} load!!! OWO')#добавлю сбда потом функцию гл меню
         
     else:
-        print('\nbind not load, try one more time :(')
+        print('\nbind not load, try one more time :(')#добавлю сбда потом функцию гл меню
